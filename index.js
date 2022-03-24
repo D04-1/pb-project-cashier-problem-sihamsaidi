@@ -1,7 +1,7 @@
 const kassiererProblem = (preis, betrag)=> {
 let restGeld = betrag - preis;
-console.log(restGeld);
-const wechselGeld = 0
+console.log('Rest Geld:', restGeld);
+//const wechselGeld = 0
 
 let zwanziger= Math.floor(restGeld / 20)
 restGeld = restGeld - zwanziger * 20
@@ -20,11 +20,24 @@ restGeld = restGeld - zwanzigCentMünze * 0.2
 
 
 let fünfCentMünze= Math.floor(restGeld / 0.05)
-restGeld = restGeld -fünfCentMünze* 0.05
+restGeld = restGeld -fünfCentMünze * 0.05
 
 
-console.log(restGeld);
-console.log(zwanziger, zehn, fünf, einEuro, zwanzigCentMünze, fünfCentMünze);
+
+console.log(
+    "Zwanziger:",
+    zwanziger,
+    "zehn:",
+    zehn,
+    "fünf:",
+    fünf,
+    "einEuro:",
+    einEuro,
+    "zwanzigCentMünze",
+    zwanzigCentMünze,
+    "fünfCentMünze",
+    fünfCentMünze
+    ); 
 }
 kassiererProblem(3.75, 50)
 kassiererProblem(4.5 , 20)
