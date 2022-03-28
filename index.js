@@ -19,8 +19,9 @@ let zwanzigCentMünze = Math.floor(restGeld / 0.2)
 restGeld = restGeld - zwanzigCentMünze * 0.2
 
 
-let fünfCentMünze= Math.floor(restGeld / 0.05)
-restGeld = restGeld -fünfCentMünze * 0.05
+let fünfCentMünze= Math.round(restGeld / 0.05)
+restGeld = restGeld - fünfCentMünze * 0.05
+console.log(fünfCentMünze);
 
 
 
@@ -42,3 +43,7 @@ console.log(
 kassiererProblem(3.75, 50)
 kassiererProblem(4.5 , 20)
 kassiererProblem(3, 4)
+kassiererProblem(15.95, 100)
+kassiererProblem(19.90, 200)
+kassiererProblem(4.9, 100)
+kassiererProblem(0.05, 1)
